@@ -1,0 +1,11 @@
+Для начала я бы уточнила у команды о наличии принятых/используемых терминов, связанных с проектом и отталкивалась бы от этой информации.
+
+
+Если предоставлена свобода выбора, то для названия нашей планеты я бы создала переменную c именем theNameOfOurPlanet, the_name_of_our_planet, our_planet_name или myPlanetName. Например:
+
+	let theNameOfOurPlanet = 'Земля'; 
+
+
+Для имени текущего посетителя сайта: current_user_name, currentUserName, currentSiteVisitorName, currentVisitorName, current_visitor_name, currentGuestName. Например:
+
+	let current_user_name = 'Саша';
