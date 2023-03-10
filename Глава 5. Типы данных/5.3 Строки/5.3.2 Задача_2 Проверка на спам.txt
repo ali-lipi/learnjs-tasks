@@ -1,0 +1,51 @@
+Проверка на спам.
+
+важность: 5
+Напишите функцию checkSpam(str), возвращающую true, если str содержит 'viagra' или 'XXX', а иначе false.
+
+Функция должна быть нечувствительна к регистру:
+
+checkSpam('buy ViAgRA now') == true
+checkSpam('free xxxxx') == true
+checkSpam("innocent rabbit") == false
+
+-----------------------------------------
+
+Решение:
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+      function checkSpam(str) {
+        let lowerStr = str.toLowerCase();
+        
+        return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+      }
+
+      alert( checkSpam('buy ViAgRA now') );
+      alert( checkSpam('free xxxxx') );
+      alert( checkSpam("innocent rabbit") );
+  </script>
+</body>
+</html>
+
+============================================
+
+Примечание (из учебника):
+
+Для поиска без учёта регистра символов переведём всю строку в нижний регистр, а потом проверим, есть ли в ней искомые подстроки:
+
+function checkSpam(str) {
+  let lowerStr = str.toLowerCase();
+
+  return lowerStr.includes('viagra') || lowerStr.includes('xxx');
+}
+
+alert( checkSpam('buy ViAgRA now') );
+alert( checkSpam('free xxxxx') );
+alert( checkSpam("innocent rabbit") );
