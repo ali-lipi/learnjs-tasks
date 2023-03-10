@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getMaxSubSum(arr) {
+            let maximum_sum = 0;
+
+            for (let i = 0; i < arr.length; i++) {
+                let sumFixedStart = 0;
+                for (let j = i; j < arr.length; j++) {
+                sumFixedStart += arr[j];
+                maximum_sum = Math.max(maximum_sum, sumFixedStart);
+                }
+            }
+
+            return maximum_sum;
+        }
+
+        alert( getMaxSubSum([-1, 2, 3, -9]) );
+    </script>
+</body>
+</html>
