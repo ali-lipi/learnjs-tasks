@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function camelize(text) {
+        let arr = text.split("")
+        while (arr.includes("-"))
+        {
+        arr.splice(arr.indexOf("-"), 2, arr[arr.indexOf("-")+1].toUpperCase())
+        }
+
+        alert(arr.join(""))
+        }
+
+        camelize('border-left-width');
+    </script>
+</body>
+</html>
